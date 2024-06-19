@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>~IT Study Util Site~</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.dropotron.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script><noscript>
+	<link rel="stylesheet" href="css/skel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="./js/function.js"></script>
+	</noscript>
+	<script>
+		function printTime() {
+
+			var clock = document.getElementById("clock");
+			var now = new Date(); // 현재시간
+			var nowTime = now.getFullYear() + "년" + (now.getMonth() + 1) + "월" + now.getDate() + "일" + now.getHours() + "시" + now.getMinutes() + "분" + now.getSeconds() + "초";
+			clock.innerHTML = nowTime; // 현재시간을 출력
+			setTimeout("printTime()", 1000);// setTimeout(“실행할함수”,시간) 시간은1초의 경우 1000
+		}
+		window.onload = function () {// 페이지가 로딩되면 실행
+			printTime();
+		}
+
+	</script>
+</head>
+
+<body class="homepage">
+
+	<!-- Header Wrapper -->
+	<div class="wrapper style1">
+
+		<!-- Header -->
+		<div id="header">
+			<span id="clock"></span>
+			<div class="container">
+
+				<!-- Logo -->
+				<h1><a href="#" id="logo">Solarize</a></h1>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li>
+							<a href="">Background Music</a>
+							<ul>
+								<li><a href="#">즐거운음악</a></li>
+								<li><a href="#">잔잔한음악</a></li>
+								<li><a href="#">팝송</a></li>
+								<li><a href="#">인기차트</a></li>
+							</ul>
+						</li>
+						<li><a href="#">IT News</a>
+							<ul>
+								<li><a href="#">IT뉴스1</a></li>
+								<li><a href="#">IT뉴스2</a></li>
+								<li><a href="#">IT뉴스3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Site List</a>
+							<ul>
+								<li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
+								<li><a href="https://cdnjs.com/" target="_blank">cdn</a></li>
+								<li><a href="#">코테사이트</a>
+									<ul>
+										<li><a href="https://www.acmicpc.net/" target="_blank">백준</a></li>
+										<li><a href="https://programmers.co.kr/" target="_blank">프로그래머스</a></li>
+										<li><a href="#"></a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="#">notice of employment</a>
+							<ul>
+								<li><a href="https://www.saramin.co.kr/zf_user/" target="_blank">사람인</a></li>
+								<li><a href="https://kr.linkedin.com/" target="_blank">링크드인</a></li>
+								<li><a href="https://www.jobkorea.co.kr/">잡코리아</a></li>
+								<li><a href="https://www.jobplanet.co.kr/job">잡플래닛</a></li>
+								<li><a href="https://www.incruit.com/">인클루트</a></li>
+							</ul>
+						</li>
+
+
+
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Banner -->
+		<div id="banner">
+			<section class="container">
+				<h2>IT Study Util</h2>
+				<span>made by YongWoo</span>
+				<p>이 사이트는 IT유틸사이트로 공부할 때 여러 각종 사이트 모음과, 유틸, 정보를 모아놓은 페이지입니다.</p>
+			</section>
+		</div>
+
+	</div>
+
+	<!-- Section One -->
+	<div class="wrapper style2">
+		<section class="container">
+			<div class="row double">
+				<div class="6u">
+					<header class="major">
+						<h2>오늘 할일 메모</h2>
+						
+						<button class="button">작성하기</button>
+						<!-- 글을 작성하면 아래에 등장하게 하기 -->
+						<span class="byline"></span>
+					</header>
+				</div>
+				<div class="6u">
+					<h3>명언 & 동기부여 글귀</h3>
+					<p>동기부여 & 명언 글귀 크롤링하거나 랜덤으로 보여주기</p>
+					<a href="#" class="button">명언 & 글귀 모음집</a>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Section Two -->
+	<div class="wrapper style3">
+		<section class="container">
+			<header class="major">
+				<h2>공부한 시간</h2>
+			</header>
+			<div class="timer_cover">
+				<div class="timer">
+					<p>타이머</p>
+					<p>00 : 00 : 00</p>
+				</div>
+				<div class="stop_list">
+					<p>stop 눌렀을 때 리스트 형식으로 기록하게끔</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Section Three -->
+	<div class="wrapper style4">
+		<section class="container">
+			<header class="major">
+				<h2>News</h2>
+				<span class="byline"></span>
+			</header>
+			<div class="row flush">
+				<div class="4u">
+					<ul class="special-icons">
+						<h1>About Devel news</h1>
+						<li>
+							뉴스 1
+						</li>
+						<li>
+							뉴스 2
+						</li>
+						<li>
+							뉴스 3
+						</li>
+					</ul>
+				</div>
+				<div class="4u">
+					<ul class="special-icons">
+						<h1>About Security news</h1>
+						<li>
+							뉴스 1
+						</li>
+						<li>
+							뉴스 2
+						</li>
+						<li>
+							뉴스 3
+						</li>
+					</ul>
+				</div>
+				<div class="4u">
+					<ul class="special-icons">
+						<h1>About AI news</h1>
+						<li>
+							뉴스 1
+						</li>
+						<li>
+							뉴스 2
+						</li>
+						<li>
+							뉴스 3
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+	<!-- Footer -->
+	<div id="footer">
+		<section class="container">
+			<header class="major">
+				<h2>Connect with us</h2>
+				<span class="byline">디자인, 기능 등등 여러가지 의견 있으시면 언제든 아래에 연락주세요</span>
+			</header>
+			<ul class="icons">
+				<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+				<li><a href="https://open.kakao.com/o/sYYdMfyg"><img src="/images/kakaoImg.png" width="30px" ><span>KaKao</span></a></li>
+				<li><a href="https://mail.naver.com/v2/new" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+			</ul>
+			<hr>
+		</section>
+	</div>
+
+	<div class="copyright">
+		Design by: <a href="https://templated.co/">Templated</a>
+		Made by : BaeYongWoo 
+	</div>
+
+</body>
+
+</html>
